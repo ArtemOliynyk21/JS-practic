@@ -395,20 +395,20 @@
 
 //  - задача 36 (1тема)
 
-function checkForSpam(message) {
-  let result;
-  let NormalizedMessage;
-  // Change code below this line
-  NormalizedMessage = message.toLowerCase();
-  result = NormalizedMessage.includes('spam') || NormalizedMessage.includes('sale');
-  console.log(result);
-  // Change code above this line
-  return result;
-}
-checkForSpam('Latest technology news');
-checkForSpam('JavaScript weekly newsletter');
-checkForSpam('Get best sale offers now!');
-checkForSpam('Amazing SalE, only tonight!');
-checkForSpam('Trust me, this is not a spam message');
-checkForSpam('Get rid of sPaM emails. Our book in on sale!');
-checkForSpam('[SPAM] How to earn fast money?');
+// function checkForSpam(message) {
+//   let result;
+//   let NormalizedMessage;
+//   // Change code below this line
+//   NormalizedMessage = message.toLowerCase();
+//   result = NormalizedMessage.includes('spam') || NormalizedMessage.includes('sale');
+//   console.log(result);
+//   // Change code above this line
+//   return result;
+// }
+// checkForSpam('Latest technology news');
+// checkForSpam('JavaScript weekly newsletter');
+// checkForSpam('Get best sale offers now!');
+// checkForSpam('Amazing SalE, only tonight!');
+// checkForSpam('Trust me, this is not a spam message');
+// checkForSpam('Get rid of sPaM emails. Our book in on sale!');
+// checkForSpam('[SPAM] How to earn fast money?');
