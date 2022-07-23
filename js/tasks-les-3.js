@@ -743,43 +743,43 @@
 
 //  - задача 41 (3 тема)
 // ЗАДАЧА: РАСШИРЯЕМ ИНВЕНТАРЬ
-const atTheOldToad = {
-  potions: [
-    { name: 'Speed potion', price: 460 },
-    { name: 'Dragon breath', price: 780 },
-    { name: 'Stone skin', price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    return this.potions;
-  },
-  addPotion(newPotion) {
-    for (const potion of this.potions) {
-      if (potion.name === newPotion.name) {
-        return `Error! Potion ${newPotion.name} is already in your inventory!`;
-      }
-    }
-    this.potions.push(newPotion);
-  },
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     for (const potion of this.potions) {
+//       if (potion.name === newPotion.name) {
+//         return `Error! Potion ${newPotion.name} is already in your inventory!`;
+//       }
+//     }
+//     this.potions.push(newPotion);
+//   },
 
-  removePotion(potionName) {
-    for (const potion of this.potions) {
-      if (potion.name === potionName) {
-        if (this.potions.includes(potion)) {
-          const potionIndex = this.potions.indexOf(potion);
-          return this.potions.splice(potionIndex, 1);
-        }
-      }
-    }
-    return console.log(`Potion ${potionName} is not in inventory!`);
-  },
+//   removePotion(potionName) {
+//     for (const potion of this.potions) {
+//       if (potion.name === potionName) {
+//         if (this.potions.includes(potion)) {
+//           const potionIndex = this.potions.indexOf(potion);
+//           return this.potions.splice(potionIndex, 1);
+//         }
+//       }
+//     }
+//     return console.log(`Potion ${potionName} is not in inventory!`);
+//   },
 
-  updatePotionName(oldName, newName) {
-    for (let i = 0; i < this.potions.length; i += 1) {
-      if (this.potions[i].name === oldName) {
-        this.potions[i].name = newName;
-      }
-    }
-  },
-  // Change code above this line
-};
+//   updatePotionName(oldName, newName) {
+//     for (let i = 0; i < this.potions.length; i += 1) {
+//       if (this.potions[i].name === oldName) {
+//         this.potions[i].name = newName;
+//       }
+//     }
+//   },
+//   // Change code above this line
+// };
